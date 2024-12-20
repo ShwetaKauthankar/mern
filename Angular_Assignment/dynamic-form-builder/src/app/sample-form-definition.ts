@@ -26,7 +26,8 @@ export const sampleFormDefinition: FormDefinition = [
   {
     fieldtype: "number",
     name: "Price",
-    group: "Product Information"
+    group: "Product Information",
+    validator: ["required"]
   },
   {
     fieldtype: "boolean",
