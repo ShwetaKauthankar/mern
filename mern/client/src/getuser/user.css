@@ -1,0 +1,78 @@
+.userTable{
+    width: 80%;
+    margin: 50px auto;
+    padding: 50px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.09);
+}
+
+.userTable table{
+    width: 100%;
+    margin-top: 30px;
+}
+
+.userTable table thead th {
+    background-color: cadetblue;
+    color: #fff;
+}
+
+.userTable table tbody td {
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.actionButtons button{
+    margin: 0 10px;
+}
+
+.searchField {
+    margin-bottom: 10px;
+}
+
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .userTable {
+      padding: 10px;
+    }
+  
+    .table thead {
+      display: none;
+    }
+  
+    .table tbody {
+      display: block;
+    }
+  
+    .table tbody tr {
+      display: block;
+      margin-bottom: 15px;
+      border: 1px solid #dee2e6;
+      padding: 10px;
+      border-radius: 10px;
+    }
+  
+    .table tbody td {
+      display: flex;
+      justify-content: space-between;
+      padding: 8px 0;
+    }
+  
+    .table tbody td::before {
+      content: attr(data-label);
+      flex-basis: 40%;
+      font-weight: bold;
+      color: #495057;
+    }
+  
+    .actionButtons {
+      flex-direction: column;
+      gap: 5px;
+    }
+  
+    button {
+      font-size: 14px;
+    }
+  }
